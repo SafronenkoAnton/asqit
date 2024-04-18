@@ -3,7 +3,7 @@
 <%= @questions.inspect %>
 -->
 <% @questions.each do |question| %>
-  <h4> ID =  <%= question.title %> </h4>
+  <h4> <%= question.id %> Title:  <%= question.title %> </h4>
   <!--
     <time datetime="<%=question.created_at.strftime('%Y-%m-%d %H:%M:%S') %>">
       <%=question.created_at %>
