@@ -3,7 +3,9 @@
 <%= @questions.inspect %>
 -->
 <% @questions.each do |question| %>
+
   <h4> <%= question.id %> Title:  <%= question.title %> </h4>
+
   <!--
     <time datetime="<%=question.created_at.strftime('%Y-%m-%d %H:%M:%S') %>">
       <%=question.created_at %>
@@ -15,6 +17,7 @@
   </time>
   
   <p>
-    <h5><%= question.body %></h5>
+    <h5><%= question.body %></h5> 
+    <br> <%= link_to "Edit", edit_question_path(question) %>
   </p>
 <% end %>
