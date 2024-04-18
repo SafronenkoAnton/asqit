@@ -8,6 +8,8 @@ class QuestionsController < ApplicationController
   end
 
   def create
+    # render plain: params[:question][:body]
+    # render plain: question_params
     @question = Question.new(question_params)
     if @question.save
       redirect_to questions_path
