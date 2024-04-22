@@ -6,6 +6,7 @@ class QuestionsController < ApplicationController
   
   def index
     @questions = Question.all
+    # @question = Question.find(3)
   end
 
   def new
