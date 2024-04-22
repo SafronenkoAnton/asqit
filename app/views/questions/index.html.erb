@@ -1,14 +1,14 @@
 <h1> Questions list </h1>
-<!--
-<%= @questions.inspect %>
--->
+# <!--
+# <%= @questions.inspect %>
+# -->
 <% @questions.each do |question| %>
 
   <h4> <%= question.id %> Title:  <%= question.title %> </h4>
 
   
-    <time datetime="<%=question.created_at.strftime('%Y-%m-%d %H:%M:%S') %>">
-      <%=question.created_at %>
+    <time datetime="<%=question.format_data %>">
+      <%=question.format_data %>
     </time>
   
    <p>

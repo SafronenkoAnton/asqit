@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   # post '/questions', to: 'questions#create'
 
+  get '/test', to: 'test#new'
+
   root 'pages#index'
 end

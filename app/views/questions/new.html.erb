@@ -6,7 +6,7 @@
     <%= f.label :title %>
     <%= f.text_field :title, required: true, minlength: 2, placeholder: "Title"  %>
   </div>
-  
+  <br>
   <!--
   <div>
     <%= f.label :title %>
@@ -16,8 +16,8 @@
   
   <div>
     <%= f.label :body %>
-    <%= f.text_area :body, size: "70x5", required: true, minlength: 2 %>
+    <%= f.text_area :body, size: "50x5", required: true, minlength: 2 %>
   </div>
-
+  <br>
   <%= f.submit "Submit question!" %>
 <% end %>

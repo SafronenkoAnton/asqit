@@ -1,0 +1,11 @@
+<h1> This is test code result </h1>
+
+<%= form_with url: "/", method: :get do |form| %>
+
+<%= form.radio_button :age, "child" %>
+<%= form.label :age_child, "I am younger than 21" %>
+<%= form.radio_button :age, "adult" %>
+<%= form.label :age_adult, "I am over 21" %>
+
+<%= form.submit "Submit!" %>
+<% end %>
